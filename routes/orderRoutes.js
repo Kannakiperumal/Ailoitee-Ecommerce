@@ -381,7 +381,7 @@ router.get('/getallOrders', authenticate, authorizeRole("admin"), OrderControlle
  *         description: Internal server error
  */
 
-router.get("/getOrderByEmail/:email/:orderId", OrderController.getOrderById);
+router.get("/getOrderById/:email/:orderId", OrderController.getOrderById);
 
 /**
  * @swagger
